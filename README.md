@@ -187,12 +187,12 @@ Oh My BackEnd
    * ~~Создание веток и тегов (branch/tag) <kbd>junior</kbd>~~
    * ~~Слияние веток (merge) <kbd>junior</kbd>~~
    * ~~[Упороться полностью git'ом](https://git-scm.com/book/ru/v2) <kbd>guru ⚡</kbd>~~
-1. Структуры данных. <kbd>junior</kbd>
-   * Хеш таблицы. <kbd>middle</kbd>
+1. ~~Структуры данных. <kbd>junior</kbd>~~
+   * ~~Хеш таблицы. <kbd>middle</kbd>~~
      > Таблицы часто используются в самих языках программирования (ассоциативные массивы, объекты и т.п.)
-   * Очередь и стек. <kbd>junior</kbd>
+   * ~~Очередь и стек. <kbd>junior</kbd>~~
      > Самые простые структуры данных, которые часто придётся использовать повседневно в коде.
-   * [Связный список](https://ru.wikipedia.org/wiki/Связный_список) и [двусвязный список](https://ru.wikipedia.org/wiki/Связный_список#Двусвязный_список_(двунаправленный_связный_список)). <kbd>middle</kbd>
+   * ~~[Связный список](https://ru.wikipedia.org/wiki/Связный_список) и [двусвязный список](https://ru.wikipedia.org/wiki/Связный_список#Двусвязный_список_(двунаправленный_связный_список)). <kbd>middle</kbd>~~
      > Эти структуры данных часто используются в разработке так как являются самым простым способом связать элементы с собой.
      > Они так же активно используются внутри вашего языка (под "капотом") повсеместно.
 1. Форматы хранения и передачи данных
@@ -212,7 +212,7 @@ Oh My BackEnd
 Сеть в разработке самая важная и, часто, мало заметная часть.
 
 1. Базовое понимание работы сети. <kbd>junior</kbd>
-   * Протокол TCP <kbd>middle</kbd>
+   * ~~Протокол TCP <kbd>middle</kbd>~~
      > Вы вряд ли будете читать пакеты TCP. Но полезно знать КАК работает TCP,
      > это позволит понять почему при идеальных "интернетах" всё равно приложение может лагать по сети.
      * TCP пакет <kbd>guru ⚡</kbd>
@@ -222,7 +222,7 @@ Oh My BackEnd
      * Буферы (window size) <kbd>middle</kbd>
      * [Проблемы TCP](https://www.youtube.com/watch?v=aXYJlizk3CQ) <kbd>middle+</kbd>
        > TCP очень старый протокол, который уже не удовлетворяет современным реалиям.
-   * Протокол UDP. <kbd>middle</kbd>
+   * ~~Протокол UDP. <kbd>middle</kbd>~~
      > Самый простой сетевой протокол семейства. Требуется понимание его работы.
      > HTTP/3.0, DNS работает на протоколе UDP, и понимание UDP даст немного понимания в работе HTTP/3.0
      * UDP-пакет <kbd>guru ⚡</kbd>
@@ -230,8 +230,8 @@ Oh My BackEnd
 1. Проблемы сети. <kbd>junior</kbd>
    > Их, как всегда, много. Но стоит выделить те, которые явно влияют на скорость работы сети.
    > По большей части эти проблемы присущи TCP, но могут появиться и там где эмулируют TCP — на другом протоколе (например UDP)
-   * Packet loss <kbd>junior</kbd>
-   * Reordering <kbd>middle</kbd>
+   * ~~Packet loss <kbd>junior</kbd>~~
+   * ~~Reordering <kbd>middle</kbd>~~
    * Jitter <kbd>middle</kbd>
    * Round-Trip Time (RTT aka лаг) <kbd>junior</kbd>
    * [Сетевое ожидание](https://developer.mozilla.org/ru/docs/Web/Performance/Understanding_latency) (Network latency, задержка) <kbd>middle</kbd>
@@ -265,17 +265,17 @@ Oh My BackEnd
 1. Реляционные базы данных MySQL/Postgres/и т.д. <kbd>junior</kbd>
    > MySQL подразумевает как MySQL от Oracle, так и различные варианты в виде MariaDB, Percona XTraDB и т.д.
    > В общем понимании семейства: MySQL/Postgres/MSSQL/и т.д. имеют схожие SQL API, различаются только внутренней реализацией, производительностью и масштабируемостью.
-   * Базовый синтаксис запросов `SELECT`/`INSERT`/`UPDATE`/`DELETE`. <kbd>junior</kbd>
-   * Создание и модификация таблиц <kbd>junior</kbd>
-       * Типы колонок таблиц их назначение и различие <kbd>junior</kbd>
-           * Целочисленные типы (int)
-           * Текстовые типы (text)
-           * Наборы, перечисления (enum)
-           * Строковые типы (char, varchar)
-           * Десятичные типы (decimal)
-           * Числа с плавающей запятой (double)
-           * прочие
-       * Создание и применение ALTER запросов. <kbd>junior</kbd>
+   * ~~Базовый синтаксис запросов `SELECT`/`INSERT`/`UPDATE`/`DELETE`. <kbd>junior</kbd>~~
+   * ~~Создание и модификация таблиц <kbd>junior</kbd>~~
+       * ~~Типы колонок таблиц их назначение и различие <kbd>junior</kbd>~~
+           * ~~Целочисленные типы (int)~~
+           * ~~Текстовые типы (text)~~
+           * ~~Наборы, перечисления (enum)~~
+           * ~~Строковые типы (char, varchar)~~
+           * ~~Десятичные типы (decimal)~~
+           * ~~Числа с плавающей запятой (double)~~
+           * ~~прочие~~
+       * ~~Создание и применение ALTER запросов. <kbd>junior</kbd>~~
    * Анализ выполнения запросов через `EXPLAIN`, понимание результатов `EXPLAIN`. <kbd>junior</kbd>
      > Самый действенный способ понять почему тормозит запрос.
    * Диагностика производительности.
@@ -363,18 +363,18 @@ Oh My BackEnd
 Разработчик который не знает HTTP протокол — это как сапожник без сапог.
 Поэтому даже <kbd>junior</kbd> должен многое знать про протокол HTTP.
 
-1. [Понимание общего формата протокола](https://developer.mozilla.org/ru/docs/Web/HTTP/Overview): где заголовки, а где тело. <kbd>junior</kbd>
-1. Сродниться со вкладкой Сеть/Network в инспекторе браузера <kbd>junior</kbd>
+1. ~~[Понимание общего формата протокола](https://developer.mozilla.org/ru/docs/Web/HTTP/Overview): где заголовки, а где тело. <kbd>junior</kbd>~~
+1. ~~Сродниться со вкладкой Сеть/Network в инспекторе браузера <kbd>junior</kbd>~~
    > В консоли можно наблюдать все HTTP-запросы со страницы и даже делать самим через функцию `fetch`.
-1. [Методы HTTP-запросов.](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods) Их назначение и ограничения. <kbd>junior</kbd>
+1. ~~[Методы HTTP-запросов.](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods) Их назначение и ограничения. <kbd>junior</kbd>~~
    > Каждый метод имеет своё назначение (достаточно перевести названия методов) и, как следствие, имеет свои условности и ограничения.
-   * Основные [GET](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/GET), [POST](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/POST), [HEAD](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/HEAD) <kbd>junior</kbd>
-   * Дополнительные `PUT`, `DELETE`, `PATCH` <kbd>middle</kbd>
+   * ~~Основные [GET](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/GET), [POST](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/POST), [HEAD](https://developer.mozilla.org/ru/docs/Web/HTTP/Methods/HEAD) <kbd>junior</kbd>~~
+   * ~~Дополнительные `PUT`, `DELETE`, `PATCH` <kbd>middle</kbd>~~
      > Используются в REST API вместе с основными методами
    * Прочие <kbd>middle+</kbd>
      > Это уже методы узкой направленности, редко когда придётся с ними напрямую работать. Тем не менее они активно используются приложениями.
-1. [Коды HTTP ответов](https://developer.mozilla.org/ru/docs/Web/HTTP/Status) <kbd>junior</kbd>
-   * Принцип разделения кодов на группы: 100-199, 200-299, 300-399, 400-499, 500-599. <kbd>junior</kbd>
+1. ~~[Коды HTTP ответов](https://developer.mozilla.org/ru/docs/Web/HTTP/Status) <kbd>junior</kbd>~~
+   * ~~Принцип разделения кодов на группы: 100-199, 200-299, 300-399, 400-499, 500-599. <kbd>junior</kbd>~~
      > Коды создавались и описывались не в хаотичном порядке. Есть чёткое разделение их "сфер влияния".
      > Даже если какой-то сервер придумает свой код ответа, то по группе вы сможете лучше понять причину такого ответа.
    * Основные (частые): [200](https://developer.mozilla.org/ru/docs/Web/HTTP/Status/200),
